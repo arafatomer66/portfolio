@@ -22,6 +22,3 @@ Push to a GitHub repo and enable Pages on the `main` branch, root folder.
 - Copy-to-clipboard email button with success state
 - All motion is transform/opacity only; `prefers-reduced-motion` turns it all off, touch/small screens get no cursor, tilt or ambient canvas
 
-## To do before it is really yours
-
-Project images are Picsum placeholders seeded per project. Replace the `src` on each `.card-media img` with a real screenshot.
