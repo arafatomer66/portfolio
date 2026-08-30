@@ -69,6 +69,7 @@ section { padding: clamp(6rem, 12vw, 11rem) var(--pad); max-width: var(--measure
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a { font-size: 13px; color: var(--ink-2); transition: color .3s; }
 .nav-links a:hover, .nav-links a.is-active { color: var(--ink); }
+.nav-links .nav-ide { color: var(--cyan); }
 
 /* Buttons and links */
 .btn {
