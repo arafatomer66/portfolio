@@ -167,11 +167,11 @@
       "2018-2019  Retail Technologies Ltd    Junior Programmer",
     ],
     projects: () => [
-      "ShareDeal     group buying, 40K+ installs, BDT 120M seed    " + link("https://sharedealnow.com", "sharedealnow.com"),
+      "ShareDeal     group buying, 100K+ installs, BDT 120M seed    " + link("https://sharedealnow.com", "sharedealnow.com"),
       "HishabPati    offline-first ledger SaaS, 100K+ installs",
       "Schertech MES manufacturing execution with IoT",
       "Netverk       Xero to SAP real-time sync",
-      "Bdstall       marketplace app, 25K to 60K+ daily visitors",
+      "Bdstall       marketplace app, 50K+ installs, 25K to 60K+ daily visitors",
       "Square Bear   Kanban project management SaaS",
     ],
     writing: () => [
