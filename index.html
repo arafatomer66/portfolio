@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Omer Arafat, Senior Software Engineer and Co-Founder</title>
+  <title>Omer Arafat</title>
   <meta name="description" content="Senior Software Engineer leading IAM at Allianz Australia and Co-Founder and CTO of ShareDeal. Eight years shipping enterprise systems, mobile apps and startups." />
   <meta name="theme-color" content="#0B0C10" />
   <meta property="og:title" content="Omer Arafat" />
@@ -11,207 +11,158 @@
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <canvas id="ambient" aria-hidden="true"></canvas>
-  <div class="grain" aria-hidden="true"></div>
   <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
   <canvas id="trail" aria-hidden="true"></canvas>
 
   <header class="nav" id="nav">
-    <a class="nav-brand" href="#top" data-cursor="link">OA</a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#about" data-cursor="link">About</a>
-      <a href="#work" data-cursor="link">Work</a>
-      <a href="#experience" data-cursor="link">Experience</a>
-      <a href="#terminal" data-cursor="link">Terminal</a>
-      <a href="#writing" data-cursor="link">Writing</a>
-    </nav>
-    <a class="btn btn-ghost nav-cta" href="#contact" data-cursor="link"><span>Get in touch</span></a>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top" data-cursor="link">Omer Arafat</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about" data-cursor="link">About</a>
+        <a href="#work" data-cursor="link">Work</a>
+        <a href="#experience" data-cursor="link">Experience</a>
+        <a href="#terminal" data-cursor="link">Terminal</a>
+        <a href="#writing" data-cursor="link">Writing</a>
+        <a href="#contact" data-cursor="link">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow reveal">Dhaka, Bangladesh. Working across three time zones.</p>
-          <h1 class="display split" data-split>Identity systems by day. A startup by night.</h1>
-          <p class="lede reveal" style="--d:.5s">Senior Software Engineer leading IAM at Allianz Australia. Co-Founder and CTO of ShareDeal, Bangladesh's first group-buying platform.</p>
-          <div class="hero-actions reveal" style="--d:.65s">
-            <a class="btn btn-primary" href="#work" data-cursor="link"><span>See the work</span></a>
-            <a class="btn btn-ghost" href="#contact" data-cursor="link"><span>Get in touch</span></a>
-          </div>
-        </div>
-        <div class="hero-visual reveal" style="--d:.3s" data-parallax="0.15">
-          <div class="glass hero-card" data-tilt>
-            <div class="hero-card-top">
-              <span class="mono">omer.arafat</span>
-              <span class="pill pill-live"><i></i>Available</span>
-            </div>
-            <div class="stat-grid">
-              <div class="stat"><b data-count="8" data-suffix="+">0</b><span>years engineering</span></div>
-              <div class="stat"><b data-count="15">0</b><span>engineers led</span></div>
-              <div class="stat"><b data-count="70" data-prefix="BDT " data-suffix="M">0</b><span>seed raised</span></div>
-              <div class="stat"><b data-count="140" data-suffix="K+">0</b><span>app installs shipped</span></div>
-            </div>
-            <div class="hero-card-foot mono">
-              <span>SailPoint</span><span>Flutter</span><span>Angular</span><span>Node.js</span><span>AWS</span><span>.NET</span>
-            </div>
-          </div>
-        </div>
+      <h1 class="display split" data-split>Omer Arafat.</h1>
+      <p class="hero-sub reveal" style="--d:.35s">Senior Software Engineer.<br />IAM lead at Allianz Australia. CTO of ShareDeal.</p>
+      <div class="hero-actions reveal" style="--d:.5s">
+        <a class="btn" href="#work" data-cursor="link"><span>See the work</span></a>
+        <a class="link" href="#contact" data-cursor="link">Get in touch <i>›</i></a>
+      </div>
+
+      <div class="stats reveal" style="--d:.7s" data-parallax="0.08">
+        <div class="stat"><b data-count="8" data-suffix="+">0</b><span>years engineering</span></div>
+        <div class="stat"><b data-count="15">0</b><span>engineers led</span></div>
+        <div class="stat"><b data-count="70" data-suffix="M">0</b><span>BDT seed raised</span></div>
+        <div class="stat"><b data-count="140" data-suffix="K+">0</b><span>app installs shipped</span></div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <div class="about-inner">
-        <h2 class="h2 split" data-split>Eight years of bridging technical complexity and business value.</h2>
-        <div class="about-body">
-          <p class="reveal">I lead a 15-member team at Allianz Australia building a User Access Management Portal that spans Australia, New Zealand and Malaysia. RBAC design, lifecycle automation, Active Directory integration, access governance.</p>
-          <p class="reveal" style="--d:.1s">At the same time I run engineering at ShareDeal, where we raised BDT 70M in seed funding and connected farmers directly with consumers through a full ecosystem of web, mobile, seller and admin products.</p>
-          <ul class="awards reveal" style="--d:.2s">
-            <li><span class="mono">Team Spirit Award</span> Allianz Australia</li>
-            <li><span class="mono">Collaboration Master</span> Bdstall.com</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>SailPoint</span><span>One Identity</span><span>Flutter</span><span>Angular</span><span>React</span><span>Node.js</span><span>ASP.NET</span><span>Spring Boot</span><span>NestJS</span><span>Laravel</span><span>TypeScript</span><span>Python</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>Kubernetes</span>
-          <span>SailPoint</span><span>One Identity</span><span>Flutter</span><span>Angular</span><span>React</span><span>Node.js</span><span>ASP.NET</span><span>Spring Boot</span><span>NestJS</span><span>Laravel</span><span>TypeScript</span><span>Python</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>Kubernetes</span>
-        </div>
+      <p class="statement reveal">I lead a <em>15-member team at Allianz Australia</em> building the access platform for Australia, New Zealand and Malaysia. At the same time I run engineering at <em>ShareDeal</em>, where we raised BDT 70M and connected farmers directly with consumers.</p>
+      <p class="statement-sub reveal" style="--d:.15s">Eight years across identity engineering, full-stack products and mobile apps that reach hundreds of thousands of people.</p>
+      <div class="stack reveal" style="--d:.25s">
+        <span>SailPoint</span><span>One Identity</span><span>Flutter</span><span>Angular</span><span>Node.js</span><span>.NET</span><span>Spring Boot</span><span>PostgreSQL</span><span>AWS</span><span>Kubernetes</span>
       </div>
     </section>
 
     <!-- WORK -->
     <section class="work" id="work">
-      <h2 class="h2 split" data-split>Selected work</h2>
+      <header class="section-head">
+        <h2 class="h2 split" data-split>Selected work.</h2>
+        <p class="reveal">Products that shipped, scaled and are still running.</p>
+      </header>
       <div class="work-grid">
-        <article class="card glass card-lg" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Group-buying platform</span>
-            <h3>ShareDeal</h3>
-            <p>Bangladesh's first group-buying platform. Web, mobile app, admin, seller portal and CRM. 40K+ installs, BDT 70M seed funded.</p>
-            <div class="tags mono"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>MySQL</span></div>
-          </div>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-          <a class="card-link" href="https://sharedealnow.com" target="_blank" rel="noopener" aria-label="Open ShareDeal"></a>
+        <article class="card card-lg" data-tilt>
+          <span class="card-kind">Group-buying platform</span>
+          <h3>ShareDeal</h3>
+          <p>Bangladesh's first group-buying platform. Web, mobile app, admin, seller portal and CRM. 40K+ installs, BDT 70M seed funded.</p>
+          <div class="tags"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>MySQL</span></div>
+          <a class="card-link" href="https://sharedealnow.com" target="_blank" rel="noopener" aria-label="Open ShareDeal" data-cursor="link"></a>
+          <span class="card-arrow" aria-hidden="true">›</span>
         </article>
-
-        <article class="card glass" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Fintech ledger SaaS</span>
-            <h3>HishabPati</h3>
-            <p>Offline-first digital ledger SaaS for small and rural businesses. 100K+ installs on Google Play.</p>
-            <div class="tags mono"><span>Angular</span><span>Flutter</span><span>CouchDB</span></div>
-          </div>
+        <article class="card" data-tilt>
+          <span class="card-kind">Fintech ledger SaaS</span>
+          <h3>HishabPati</h3>
+          <p>Offline-first digital ledger for small and rural businesses. 100K+ installs on Google Play.</p>
+          <div class="tags"><span>Angular</span><span>Flutter</span><span>CouchDB</span></div>
         </article>
-
-        <article class="card glass" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Manufacturing execution</span>
-            <h3>Schertech MES</h3>
-            <p>Modular manufacturing execution system with IoT integration: planning, quality, process control, maintenance.</p>
-            <div class="tags mono"><span>Angular</span><span>IoT</span><span>Laravel</span></div>
-          </div>
+        <article class="card" data-tilt>
+          <span class="card-kind">Manufacturing execution</span>
+          <h3>Schertech MES</h3>
+          <p>Modular MES with IoT integration: planning, quality, process control, maintenance.</p>
+          <div class="tags"><span>Angular</span><span>IoT</span><span>Laravel</span></div>
         </article>
-
-        <article class="card glass" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Enterprise integration</span>
-            <h3>Netverk</h3>
-            <p>Real-time Xero to SAP synchronization for Australian businesses. No more manual reconciliation.</p>
-            <div class="tags mono"><span>Xero API</span><span>SAP</span><span>Node.js</span></div>
-          </div>
+        <article class="card" data-tilt>
+          <span class="card-kind">Enterprise integration</span>
+          <h3>Netverk</h3>
+          <p>Real-time Xero to SAP synchronization for Australian businesses. No more manual reconciliation.</p>
+          <div class="tags"><span>Xero API</span><span>SAP</span><span>Node.js</span></div>
         </article>
-
-        <article class="card glass" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">E-marketplace</span>
-            <h3>Bdstall</h3>
-            <p>Flutter app and platform optimisation that took daily traffic from 25K to 60K+ visitors.</p>
-            <div class="tags mono"><span>Flutter</span><span>PHP</span><span>Analytics</span></div>
-          </div>
+        <article class="card" data-tilt>
+          <span class="card-kind">E-marketplace</span>
+          <h3>Bdstall</h3>
+          <p>Flutter app and platform optimisation that took daily traffic from 25K to 60K+ visitors.</p>
+          <div class="tags"><span>Flutter</span><span>PHP</span><span>Analytics</span></div>
         </article>
-
-        <article class="card glass" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Project management SaaS</span>
-            <h3>Square Bear</h3>
-            <p>Project management SaaS with automated Kanban workflows for distributed engineering teams.</p>
-            <div class="tags mono"><span>Angular</span><span>.NET</span><span>SaaS</span></div>
-          </div>
+        <article class="card" data-tilt>
+          <span class="card-kind">Project management SaaS</span>
+          <h3>Square Bear</h3>
+          <p>Automated Kanban workflows for distributed engineering teams.</p>
+          <div class="tags"><span>Angular</span><span>.NET</span><span>SaaS</span></div>
         </article>
-
-        <article class="card glass card-lg" data-tilt data-cursor="link">
-          <div class="card-body">
-            <span class="card-kind mono">Government platform</span>
-            <h3>WorkCover</h3>
-            <p>Compliance and case management platform built for the Australian government, delivered with the K53 team.</p>
-            <div class="tags mono"><span>Angular</span><span>.NET</span><span>Government</span></div>
-          </div>
+        <article class="card card-lg" data-tilt>
+          <span class="card-kind">Government platform</span>
+          <h3>WorkCover</h3>
+          <p>Compliance and case management platform built for the Australian government, delivered with the K53 team.</p>
+          <div class="tags"><span>Angular</span><span>.NET</span><span>Government</span></div>
         </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE / TIMELINE -->
+    <!-- EXPERIENCE -->
     <section class="experience" id="experience">
-      <h2 class="h2 split" data-split>Experience</h2>
+      <header class="section-head">
+        <h2 class="h2 split" data-split>Experience.</h2>
+        <p class="reveal">Seven roles, three countries, one through-line: systems people rely on.</p>
+      </header>
       <div class="timeline">
         <svg class="timeline-svg" viewBox="0 0 2 1000" preserveAspectRatio="none" aria-hidden="true">
           <line class="tl-base" x1="1" y1="0" x2="1" y2="1000" />
           <line class="tl-glow" id="tlGlow" x1="1" y1="0" x2="1" y2="1000" />
           <line class="tl-fill" id="tlFill" x1="1" y1="0" x2="1" y2="1000" />
         </svg>
-
         <ol class="milestones">
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Apr 2024 - Present</span><h3>Senior Software Engineer (IAM) / Team Lead</h3><p class="org">Allianz Australia</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Apr 2024 - Present</span>
+            <h3>Senior Software Engineer (IAM) / Team Lead</h3><p class="org">Allianz Australia</p>
             <p>Lead a 15-member team on a User Access Management Portal for Australia, New Zealand and Malaysia. RBAC policies, lifecycle workflows, AD integration, automated provisioning.</p>
-            <div class="tags mono"><span>SailPoint</span><span>Angular</span><span>.NET</span><span>Active Directory</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Jan 2024 - Present</span><h3>Senior Software Engineer</h3><p class="org">K53 Technology Solution</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Jan 2024 - Present</span>
+            <h3>Senior Software Engineer</h3><p class="org">K53 Technology Solution</p>
             <p>Lead a 5-member team. SailPoint provisioning and compliance automation, WorkCover for the Australian government, Netverk and Square Bear.</p>
-            <div class="tags mono"><span>SailPoint</span><span>SAP</span><span>Xero</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Jun 2022 - Present</span><h3>Co-Founder and CTO</h3><p class="org">ShareDeal</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Jun 2022 - Present</span>
+            <h3>Co-Founder and CTO</h3><p class="org">ShareDeal</p>
             <p>Built and launched the full tech ecosystem, led 15 engineers and analysts, raised BDT 70M seed, 40K+ installs.</p>
-            <div class="tags mono"><span>Flutter</span><span>Node.js</span><span>Firebase</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Feb 2022 - Feb 2024</span><h3>Senior Software Engineer</h3><p class="org">Schertech / SCT Bangla</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Feb 2022 - Feb 2024</span>
+            <h3>Senior Software Engineer</h3><p class="org">Schertech / SCT Bangla</p>
             <p>Led the mobile team through full SDLC. Integrated 14 ERP modules, built an MES with IoT devices, launched Grinz task management for German users.</p>
-            <div class="tags mono"><span>Angular</span><span>Flutter</span><span>IoT</span><span>Laravel</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Sep 2021 - Oct 2022</span><h3>Full Stack Developer</h3><p class="org">Mind Orbital Technologies</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Sep 2021 - Oct 2022</span>
+            <h3>Full Stack Developer</h3><p class="org">Mind Orbital Technologies</p>
             <p>Built HishabPati, an offline-capable transaction tracking SaaS, plus its Flutter app and NestJS admin. 100K+ installs.</p>
-            <div class="tags mono"><span>Angular</span><span>CouchDB</span><span>NestJS</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Aug 2019 - Jan 2020</span><h3>Software Engineer</h3><p class="org">BDSTALL.COM</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Aug 2019 - Jan 2020</span>
+            <h3>Software Engineer</h3><p class="org">BDSTALL.COM</p>
             <p>Shipped the Bdstall Flutter app and optimised the CodeIgniter platform. Daily traffic 25K to 60K+.</p>
-            <div class="tags mono"><span>Flutter</span><span>PHP</span></div>
           </li>
-          <li class="milestone">
-            <span class="node"></span>
-            <div class="ms-head"><span class="mono">Aug 2018 - Aug 2019</span><h3>Junior Programmer</h3><p class="org">Retail Technologies Limited</p></div>
+          <li class="milestone"><span class="node"></span>
+            <span class="when">Aug 2018 - Aug 2019</span>
+            <h3>Junior Programmer</h3><p class="org">Retail Technologies Limited</p>
             <p>Front-end for an attendance and payroll system with 95% employee adoption. Automated payroll via REST API, cutting workload 30%.</p>
-            <div class="tags mono"><span>Angular</span><span>TypeScript</span></div>
           </li>
         </ol>
       </div>
@@ -219,44 +170,47 @@
 
     <!-- TERMINAL -->
     <section class="terminal-section" id="terminal">
-      <div class="terminal-intro">
+      <header class="section-head">
         <h2 class="h2 split" data-split>Prefer a shell?</h2>
         <p class="reveal">Type <code>help</code> to explore. Tab completes, arrows recall history.</p>
-      </div>
-      <div class="terminal glass reveal" style="--d:.15s" data-cursor="text">
+      </header>
+      <div class="terminal reveal" style="--d:.15s" data-cursor="text">
         <div class="term-bar">
           <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-          <span class="mono term-title">omer@portfolio ~ zsh</span>
+          <span class="term-title">omer@portfolio</span>
         </div>
         <div class="term-body" id="termBody" role="log" aria-live="polite"></div>
         <form class="term-input" id="termForm" autocomplete="off">
-          <span class="mono prompt">omer@portfolio <b>~</b> %</span>
-          <input class="mono" id="termInput" type="text" spellcheck="false" aria-label="Terminal command" placeholder="help" />
+          <span class="prompt">omer@portfolio <b>~</b> %</span>
+          <input id="termInput" type="text" spellcheck="false" aria-label="Terminal command" placeholder="help" />
         </form>
       </div>
     </section>
 
     <!-- WRITING -->
     <section class="writing" id="writing">
-      <h2 class="h2 split" data-split>Writing</h2>
+      <header class="section-head">
+        <h2 class="h2 split" data-split>Writing.</h2>
+        <p class="reveal">Notes from building identity platforms and a startup at the same time.</p>
+      </header>
       <div class="posts">
         <a class="post reveal" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="mono">May 2026</span>
+          <span class="when">May 2026</span>
           <h3>Building ShareDeal: lessons from Bangladesh's first group-buying platform</h3>
           <p>From a napkin sketch to BDT 70M in seed funding and 40K+ installs.</p>
         </a>
         <a class="post reveal" style="--d:.08s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="mono">Apr 2026</span>
+          <span class="when">Apr 2026</span>
           <h3>IAM at enterprise scale: what eight years of identity engineering taught me</h3>
           <p>RBAC, lifecycle automation and the quiet politics of access governance.</p>
         </a>
         <a class="post reveal" style="--d:.16s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="mono">Apr 2026</span>
+          <span class="when">Apr 2026</span>
           <h3>SailPoint, honestly: five years in and what I'd tell my younger self</h3>
           <p>IIQ vs IDN, why connectors are 80% of the work, and certifications as signal.</p>
         </a>
         <a class="post reveal" style="--d:.24s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="mono">Mar 2026</span>
+          <span class="when">Mar 2026</span>
           <h3>Kiln: a design system rooted in Bangladeshi heritage</h3>
           <p>56 components on npm and pub.dev, web and Flutter in lockstep.</p>
         </a>
@@ -265,28 +219,27 @@
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-      <div class="contact-inner">
-        <h2 class="display split" data-split>Let's build something.</h2>
-        <p class="lede reveal">Open to senior engineering and leadership roles, IAM consulting, and founder conversations.</p>
-        <div class="contact-row reveal" style="--d:.1s">
-          <button class="btn btn-primary copy" type="button" data-copy="arafatomer66@gmail.com" data-cursor="link">
-            <span class="copy-label">arafatomer66@gmail.com</span>
-            <span class="copy-done" aria-live="polite">Copied to clipboard!</span>
-          </button>
-          <a class="btn btn-ghost" href="https://wa.me/8801622524064" target="_blank" rel="noopener" data-cursor="link"><span>WhatsApp</span></a>
-        </div>
-        <div class="socials reveal" style="--d:.2s">
-          <a href="https://www.linkedin.com/in/arafatomer66/" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
-          <a href="https://github.com/arafatomer66" target="_blank" rel="noopener" data-cursor="link">GitHub</a>
-          <a href="https://sharedealnow.com" target="_blank" rel="noopener" data-cursor="link">ShareDeal</a>
-        </div>
+      <h2 class="display split" data-split>Let's build something.</h2>
+      <p class="hero-sub reveal">Open to senior engineering and leadership roles, IAM consulting, and founder conversations.</p>
+      <div class="hero-actions reveal" style="--d:.1s">
+        <button class="btn copy" type="button" data-copy="arafatomer66@gmail.com" data-cursor="link">
+          <span class="copy-label">Copy email</span>
+          <span class="copy-done" aria-live="polite">Copied to clipboard!</span>
+        </button>
+        <a class="link" href="https://wa.me/8801622524064" target="_blank" rel="noopener" data-cursor="link">WhatsApp <i>›</i></a>
+      </div>
+      <div class="socials reveal" style="--d:.2s">
+        <a href="https://www.linkedin.com/in/arafatomer66/" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
+        <a href="https://github.com/arafatomer66" target="_blank" rel="noopener" data-cursor="link">GitHub</a>
+        <a href="https://sharedealnow.com" target="_blank" rel="noopener" data-cursor="link">ShareDeal</a>
+        <a href="https://arafatomer66.github.io/omerarafat-resume/" target="_blank" rel="noopener" data-cursor="link">Resume</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <span class="mono">Omer Arafat, Dhaka</span>
-    <span class="mono">MSc Computer Science, Jahangirnagar University</span>
+    <span>Omer Arafat, Dhaka</span>
+    <span>MSc Computer Science, Jahangirnagar University</span>
   </footer>
 
   <script src="main.js" defer></script>
