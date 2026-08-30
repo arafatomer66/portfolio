@@ -50,7 +50,7 @@
       if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
     });
   }, { threshold: 0.2, rootMargin: "0px 0px -8% 0px" });
-  document.querySelectorAll(".reveal, .split").forEach((el) => io.observe(el));
+  document.querySelectorAll(".reveal, .split, .rise").forEach((el) => io.observe(el));
 
   /* ---------------- nav state + active link ---------------- */
   const nav = document.getElementById("nav");
@@ -157,6 +157,7 @@
       "Leadership Team lead (15), product strategy, Agile, mentoring",
     ],
     experience: () => [
+      "2026-now   RemoteIntegrity (US)       ERP & AI Product Architect and Lead Developer",
       "2024-now   Allianz Australia          Senior Software Engineer (IAM) / Team Lead",
       "2024-now   K53 Technology Solution    Senior Software Engineer",
       "2022-now   ShareDeal                  Co-Founder and CTO",
@@ -268,9 +269,10 @@
   const actx = amb && !reduce ? amb.getContext("2d") : null;
   let aw = 0, ah = 0, dpr = 1;
   const blobs = [
-    { x: 0.2, y: 0.3, r: 0.45, c: "99,102,241", a: 0.22, sx: 0.00012, sy: 0.00009, ph: 0 },
-    { x: 0.8, y: 0.7, r: 0.5, c: "79,70,229", a: 0.16, sx: 0.00009, sy: 0.00013, ph: 2 },
-    { x: 0.6, y: 0.15, r: 0.35, c: "129,140,248", a: 0.12, sx: 0.00015, sy: 0.0001, ph: 4 },
+    { x: 0.2, y: 0.3, r: 0.45, c: "99,102,241", a: 0.26, sx: 0.00012, sy: 0.00009, ph: 0 },
+    { x: 0.8, y: 0.7, r: 0.5, c: "168,85,247", a: 0.18, sx: 0.00009, sy: 0.00013, ph: 2 },
+    { x: 0.65, y: 0.15, r: 0.35, c: "34,211,238", a: 0.13, sx: 0.00015, sy: 0.0001, ph: 4 },
+    { x: 0.15, y: 0.85, r: 0.35, c: "236,72,153", a: 0.09, sx: 0.0001, sy: 0.00014, ph: 1 },
   ];
   const resizeAmbient = () => {
     if (!actx) return;
@@ -326,7 +328,7 @@
     const n = Math.min(3, Math.floor(speed / 6) + 1);
     for (let i = 0; i < n; i++) {
       if (particles.length > 90) particles.shift();
-      particles.push({ x: cur.x + (Math.random() - 0.5) * 6, y: cur.y + (Math.random() - 0.5) * 6, vx: -dx * 0.05 + (Math.random() - 0.5) * 0.8, vy: -dy * 0.05 + (Math.random() - 0.5) * 0.8, life: 1, size: 1 + Math.random() * 1.6 });
+      particles.push({ x: cur.x + (Math.random() - 0.5) * 6, y: cur.y + (Math.random() - 0.5) * 6, vx: -dx * 0.05 + (Math.random() - 0.5) * 0.8, vy: -dy * 0.05 + (Math.random() - 0.5) * 0.8, life: 1, size: 1 + Math.random() * 1.6, hue: Math.random() * 90 });
     }
   };
 
@@ -338,7 +340,7 @@
       if (p.life <= 0) { particles.splice(i, 1); continue; }
       tctx.beginPath();
       tctx.arc(p.x, p.y, p.size * p.life, 0, Math.PI * 2);
-      tctx.fillStyle = `rgba(129,140,248,${(p.life * 0.55).toFixed(3)})`;
+      tctx.fillStyle = `hsla(${(200 + p.hue) | 0},90%,70%,${(p.life * 0.6).toFixed(3)})`;
       tctx.fill();
     }
   };
