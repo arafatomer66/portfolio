@@ -55,7 +55,11 @@
   /* ---------------- nav state + active link ---------------- */
   const nav = document.getElementById("nav");
   const navLinks = [...document.querySelectorAll(".nav-links a")];
-  const sections = navLinks.map((a) => document.querySelector(a.getAttribute("href"))).filter(Boolean);
+  const sections = navLinks
+    .map((a) => a.getAttribute("href"))
+    .filter((h) => h.startsWith("#"))
+    .map((h) => document.querySelector(h))
+    .filter(Boolean);
   const sectionIO = new IntersectionObserver((entries) => {
     entries.forEach((en) => {
       if (!en.isIntersecting) return;
