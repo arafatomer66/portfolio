@@ -198,6 +198,7 @@
     whoami: () => ["omer arafat"],
     about: () => [
       "Md Omer Arafat. Engineer, CTO and product builder, Dhaka.",
+      "ERP and AI Product Architect at RemoteIntegrity (remote, US).",
       "Co-Founder and CTO of ShareDeal, a team-buying platform.",
       "Led a 22-person IAM delivery at Allianz Australia (AU, NZ, MY).",
       "Eight years across ERP, identity, marketplaces and automation.",
@@ -221,6 +222,7 @@
       "AI         Claude Code, local LLMs, vector search, RAG",
     ],
     experience: () => [
+      "2026-now   RemoteIntegrity            ERP and AI Product Architect",
       "2024-2026  Allianz Australia          Technical Project Manager, IAM",
       "2024-2026  K53 Technology Solution    Project Manager and IAM Lead",
       "2022-now   ShareDeal                  Co-Founder and CTO",
