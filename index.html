@@ -4,34 +4,39 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Omer Arafat</title>
-  <meta name="description" content="Senior Software Engineer leading IAM at Allianz Australia and Co-Founder and CTO of ShareDeal. Eight years shipping enterprise systems, mobile apps and startups." />
-  <meta name="theme-color" content="#0B0C10" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322D3EE'/><stop offset='.5' stop-color='%23818CF8'/><stop offset='1' stop-color='%23C084FC'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%230B0C10'/><circle cx='32' cy='32' r='15' fill='none' stroke='url(%23g)' stroke-width='7'/></svg>" />
+  <meta name="description" content="Omer Arafat: engineer, CTO and product builder. ERP, identity and access management, automation and AI, shipped for teams in Bangladesh, Germany and Australia." />
+  <meta name="theme-color" content="#0C0D0F" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#F2F2EE" media="(prefers-color-scheme: light)" />
   <meta property="og:title" content="Omer Arafat" />
-  <meta property="og:description" content="Senior Software Engineer, IAM lead, Co-Founder and CTO of ShareDeal." />
+  <meta property="og:description" content="Engineer, CTO and product builder. ERP, IAM, automation and AI." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://arafatomer66.github.io/portfolio/assets/sharedeal.webp" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230C0D0F'/><circle cx='32' cy='32' r='14' fill='none' stroke='%23C9F25B' stroke-width='7'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/omer.webp" />
+  <link rel="stylesheet" href="styles.css?v=3" />
+  <script>document.documentElement.classList.add("js")</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Md Omer Arafat","jobTitle":"Co-Founder & CTO, ShareDeal","url":"https://arafatomer66.github.io/portfolio/","sameAs":["https://www.linkedin.com/in/arafatomer66/","https://github.com/arafatomer66"],"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"}}
+  </script>
 </head>
 <body>
-
-  <canvas id="ambient" aria-hidden="true"></canvas>
-  <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
-  <canvas id="trail" aria-hidden="true"></canvas>
+  <a class="skip" href="#top">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <span id="navSentinel" aria-hidden="true"></span>
 
   <header class="nav" id="nav">
     <div class="nav-inner">
-      <a class="nav-brand" href="#top" data-cursor="link">Omer Arafat</a>
+      <a class="nav-brand" href="#top"><span class="mark" aria-hidden="true"></span>Omer Arafat</a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#about" data-cursor="link">About</a>
-        <a href="#work" data-cursor="link">Work</a>
-        <a href="#experience" data-cursor="link">Experience</a>
-        <a href="#terminal" data-cursor="link">Terminal</a>
-        <a href="#writing" data-cursor="link">Writing</a>
-        <a href="#contact" data-cursor="link">Contact</a>
-        <a class="nav-ide" href="https://arafatomer66.github.io/portfolio-ide/" target="_blank" rel="noopener" data-cursor="link">Open in IDE ›</a>
+        <a href="#work">Work</a>
+        <a href="#sharedeal">ShareDeal</a>
+        <a href="#experience">Experience</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#writing">Writing</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -40,217 +45,417 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <h1 class="display gradient-text rise">Omer Arafat.</h1>
-      <p class="hero-sub reveal" style="--d:.35s">ERP &amp; AI Product Architect. <br />IAM lead at Allianz Australia. CTO of ShareDeal.</p>
-      <div class="hero-actions reveal" style="--d:.5s">
-        <a class="btn" href="#work" data-cursor="link"><span>See the work</span></a>
-        <a class="link" href="#contact" data-cursor="link">Get in touch <i>›</i></a>
+      <div class="hero-copy">
+        <p class="eyebrow rise" style="--d:.05s">Md Omer Arafat</p>
+        <h1 class="hero-title" data-split>I build the systems a business runs on.</h1>
+        <p class="hero-sub rise" style="--d:.55s">Engineer, CTO and product builder. ERP, identity, automation and AI, shipped for teams in Bangladesh, Germany and Australia.</p>
+        <div class="hero-actions rise" style="--d:.7s">
+          <a class="btn btn-primary" href="#work" data-magnetic><span>See the work</span></a>
+          <a class="btn btn-ghost" href="#contact" data-magnetic><span>Contact</span></a>
+        </div>
       </div>
-
-      <div class="stats reveal" style="--d:.7s" data-parallax="0.08">
-        <div class="stat"><b data-count="8" data-suffix="+">0</b><span>years engineering</span></div>
-        <div class="stat"><b data-count="50" data-suffix="+">0</b><span>engineers led</span></div>
-        <div class="stat"><b data-count="120" data-suffix="M">0</b><span>BDT seed raised</span></div>
-        <div class="stat"><b data-count="200" data-suffix="K+">0</b><span>app installs shipped</span></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <p class="statement reveal">I architect <em>ERP and AI products at RemoteIntegrity</em>, lead a <em>15-member IAM team at Allianz Australia</em> across three countries, and run engineering at <em>ShareDeal</em>, where we raised BDT 120M and connected farmers directly with consumers.</p>
-      <p class="statement-sub reveal" style="--d:.15s">Eight years across identity engineering, full-stack products and mobile apps that reach hundreds of thousands of people.</p>
-      <div class="stack reveal" style="--d:.25s">
-        <span>SailPoint</span><span>One Identity</span><span>Flutter</span><span>Angular</span><span>Node.js</span><span>.NET</span><span>Spring Boot</span><span>PostgreSQL</span><span>AWS</span><span>Kubernetes</span>
+      <div class="hero-visual rise" style="--d:.25s">
+        <canvas id="field" aria-hidden="true"></canvas>
+        <figure class="portrait" data-tilt>
+          <img src="assets/omer.webp" width="413" height="531" alt="Portrait of Omer Arafat" />
+        </figure>
+        <div class="hero-badge" aria-hidden="true">
+          <b>Now</b>
+          <span>Co-Founder &amp; CTO, ShareDeal</span>
+        </div>
       </div>
     </section>
 
-    <!-- WORK -->
+    <!-- PROOF -->
+    <section class="proof" id="about">
+      <p class="statement reveal">Eight years of building ERPs, identity platforms, marketplaces and one whole company. <em>Every one of them tied to how a business actually runs.</em></p>
+      <div class="numbers">
+        <div class="num reveal"><b data-count="80000" data-suffix="+">0</b><span>Allianz employees get app access through the HR portal I delivered</span></div>
+        <div class="num reveal" style="--d:.08s"><b data-count="1400">0</b><span>internal applications behind one self-service request flow</span></div>
+        <div class="num reveal" style="--d:.16s"><b data-count="100" data-suffix="K+">0</b><span>installs each for the BDSTALL and Hishabpati apps I built</span></div>
+        <div class="num reveal" style="--d:.24s"><b data-count="22">0</b><span>people led on one delivery across Australia, New Zealand and Malaysia</span></div>
+      </div>
+    </section>
+
+    <!-- STACK MARQUEE -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <ul>
+          <li><i style="--i:url(https://cdn.simpleicons.org/flutter)"></i>Flutter</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/angular)"></i>Angular</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/laravel)"></i>Laravel</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/dotnet)"></i>.NET</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/nodedotjs)"></i>Node.js</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/nestjs)"></i>NestJS</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/typescript)"></i>TypeScript</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/mysql)"></i>MySQL</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/redis)"></i>Redis</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/cloudflare)"></i>Cloudflare</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/sap)"></i>SAP</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/xero)"></i>Xero</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/apachecouchdb)"></i>CouchDB</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/cypress)"></i>Cypress</li>
+          <li><i style="--i:url(https://cdn.simpleicons.org/anthropic)"></i>Claude Code</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FOCUS (bento) -->
+    <section class="focus" id="focus">
+      <h2 class="h2 reveal">What I want to work on next.</h2>
+      <p class="lede reveal" style="--d:.08s">Work tied directly to the business, that I can own end to end and build fast, in any stack.</p>
+      <div class="bento">
+        <article class="tile tile-ai reveal">
+          <h3>AI-native product building</h3>
+          <p>With Claude Code at the core, I take an idea to a production product fast: backend, web, mobile and cloud. One builder can now deliver what used to need a full team.</p>
+          <ul class="chips"><li>Web apps</li><li>Mobile</li><li>SaaS</li><li>Admin portals</li><li>APIs</li></ul>
+        </article>
+        <article class="tile tile-llm reveal" style="--d:.06s">
+          <h3>AI and LLM integration</h3>
+          <p>Agents, LLMs and RAG on a company's own data. Private, local models with vector databases, so sensitive data never leaves the business.</p>
+        </article>
+        <article class="tile tile-auto reveal" style="--d:.1s">
+          <h3>Business automation</h3>
+          <p>Systems that talk to each other. Netverk keeps Xero and SAP in sync, so finance never types the same data twice.</p>
+        </article>
+        <article class="tile tile-erp reveal" style="--d:.14s">
+          <h3>ERP modernisation</h3>
+          <p>AngularJS to Angular at Retail Technologies, 14 ERP modules at Schertech, an offline-first ledger at Hishabpati.</p>
+        </article>
+        <article class="tile tile-sec reveal" style="--d:.18s">
+          <h3>Cyber security and IAM</h3>
+          <p>One Identity expert on an insurer's access portal. Security audit, pen testing and WAF for ShareDeal.</p>
+        </article>
+        <article class="tile tile-lead reveal" style="--d:.22s">
+          <h3>Product and technical leadership</h3>
+          <div class="lead-row">
+            <div><b>22</b><span>people led at Allianz</span></div>
+            <div><b>5 to 12</b><span>Schertech Dhaka team</span></div>
+            <div><b>0 to 5</b><span>BDSTALL tech team</span></div>
+            <div><b>Every</b><span>department at ShareDeal</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK (sticky stack) -->
     <section class="work" id="work">
-      <header class="section-head">
-        <h2 class="h2 split" data-split>Selected work.</h2>
-        <p class="reveal">Products that shipped, scaled and are still running.</p>
-      </header>
-      <div class="work-grid">
-        <article class="card card-lg" data-tilt>
-          <span class="card-kind">Group-buying platform</span>
-          <h3>ShareDeal</h3>
-          <p>Bangladesh's first group-buying platform. Web, mobile app, admin, seller portal and CRM. 100K+ installs, BDT 120M seed funded.</p>
-          <div class="tags"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>MySQL</span></div>
-          <a class="card-link" href="https://sharedealnow.com" target="_blank" rel="noopener" aria-label="Open ShareDeal" data-cursor="link"></a>
-          <span class="card-arrow" aria-hidden="true">›</span>
+      <h2 class="h2 reveal">Selected work.</h2>
+      <div class="stack">
+
+        <article class="case case-wide">
+          <div class="case-text">
+            <p class="case-meta">ShareDeal <span>2022 to now</span></p>
+            <h3>A team-buying company, built from zero.</h3>
+            <p>Neighbours and offices join groups to buy groceries at lower prices. I built the customer, seller and rider apps, the web shop and one admin portal that runs every department.</p>
+            <ul class="chips"><li>Flutter</li><li>Laravel</li><li>AWS</li><li>Cloudflare</li></ul>
+            <a class="text-link" href="https://sharedealnow.com" target="_blank" rel="noopener">sharedealnow.com <i aria-hidden="true">&#8599;</i></a>
+          </div>
+          <figure class="case-media shot">
+            <img src="assets/sharedeal.webp" width="1440" height="500" loading="lazy" alt="ShareDeal website home page with a live group deal" />
+          </figure>
         </article>
-        <article class="card" data-tilt>
-          <span class="card-kind">Fintech ledger SaaS</span>
-          <h3>HishabPati</h3>
-          <p>Offline-first digital ledger for small and rural businesses. 100K+ installs on Google Play.</p>
-          <div class="tags"><span>Angular</span><span>Flutter</span><span>CouchDB</span></div>
+
+        <article class="case case-alt">
+          <div class="case-text">
+            <p class="case-meta">Allianz Australia <span>2024 to 2026</span></p>
+            <h3>One HR portal for access to 1,400 apps.</h3>
+            <p>Employees request access in one place, managers approve, and One Identity grants it automatically. Used across Australia, New Zealand and Malaysia.</p>
+            <ul class="chips"><li>Angular</li><li>.NET</li><li>One Identity</li><li>Active Directory</li></ul>
+          </div>
+          <div class="case-media figure-panel">
+            <div class="fig"><b>80,000+</b><span>employees</span></div>
+            <div class="fig"><b>1,400</b><span>internal apps</span></div>
+            <div class="fig"><b>22</b><span>person team</span></div>
+            <div class="fig"><b>On time</b><span>full Agile delivery</span></div>
+          </div>
         </article>
-        <article class="card" data-tilt>
-          <span class="card-kind">Manufacturing execution</span>
-          <h3>Schertech MES</h3>
-          <p>Modular MES with IoT integration: planning, quality, process control, maintenance.</p>
-          <div class="tags"><span>Angular</span><span>IoT</span><span>Laravel</span></div>
+
+        <article class="case">
+          <div class="case-text">
+            <p class="case-meta">Schertech / SCT Bangla <span>2022 to 2024</span></p>
+            <h3>A factory floor without paper.</h3>
+            <p>Architected and led the Schertech MES from Dhaka: machine and IoT integration, scheduling, quality, maintenance and 14 ERP modules, plus a Flutter app for the floor.</p>
+            <ul class="chips"><li>Angular</li><li>Laravel</li><li>MySQL</li><li>IoT</li><li>SAP</li></ul>
+          </div>
+          <div class="case-media figure-panel panel-grid">
+            <div class="fig"><b>14</b><span>ERP modules integrated</span></div>
+            <div class="fig"><b>5 to 12</b><span>engineers in Dhaka</span></div>
+            <div class="fig wide"><span class="mods">Machine Board, OEE, shift log, tool life, TPM, CAQ, energy, intralogistics, scheduling, Kaizen</span></div>
+          </div>
         </article>
-        <article class="card" data-tilt>
-          <span class="card-kind">Enterprise integration</span>
-          <h3>Netverk</h3>
-          <p>Real-time Xero to SAP synchronization for Australian businesses. No more manual reconciliation.</p>
-          <div class="tags"><span>Xero API</span><span>SAP</span><span>Node.js</span></div>
+
+        <article class="case case-alt">
+          <div class="case-text">
+            <p class="case-meta">Hishabpati, Mind Orbital <span>2021 to 2022</span></p>
+            <h3>A ledger that works without internet.</h3>
+            <p>Built the whole platform alone for shop owners outside Dhaka: Flutter app, web portal, admin panels and backend. Every sale saves on the device and syncs later.</p>
+            <ul class="chips"><li>Flutter</li><li>Angular</li><li>NestJS</li><li>PouchDB</li><li>CouchDB</li></ul>
+            <a class="text-link" href="https://hishabpati.com" target="_blank" rel="noopener">hishabpati.com <i aria-hidden="true">&#8599;</i></a>
+          </div>
+          <figure class="case-media shot">
+            <img src="assets/hishabpati.webp" width="1440" height="824" loading="lazy" alt="Hishabpati website showing the ledger app and an offline sale" />
+          </figure>
         </article>
-        <article class="card" data-tilt>
-          <span class="card-kind">E-marketplace</span>
-          <h3>Bdstall</h3>
-          <p>Flutter app with 50K+ installs, plus platform optimisation that took daily traffic from 25K to 60K+ visitors.</p>
-          <div class="tags"><span>Flutter</span><span>PHP</span><span>Analytics</span></div>
+
+        <article class="case">
+          <div class="case-text">
+            <p class="case-meta">BDSTALL.COM <span>2019 to 2020</span></p>
+            <h3>A marketplace, its app and its growth.</h3>
+            <p>Built the tech team from scratch, the Flutter customer app, the seller side and the operations pipeline from sign-up to live listing. Then the marketing team too.</p>
+            <ul class="chips"><li>Flutter</li><li>Angular</li><li>PHP</li><li>SEO</li></ul>
+          </div>
+          <div class="case-media figure-panel">
+            <div class="fig"><b>100K+</b><span>app installs</span></div>
+            <div class="fig"><b>25K to 70K</b><span>daily visitors</span></div>
+            <div class="fig"><b>15%</b><span>fewer defects</span></div>
+            <div class="fig"><b>100</b><span>backlinks secured</span></div>
+          </div>
         </article>
-        <article class="card" data-tilt>
-          <span class="card-kind">Project management SaaS</span>
-          <h3>Square Bear</h3>
-          <p>Automated Kanban workflows for distributed engineering teams.</p>
-          <div class="tags"><span>Angular</span><span>.NET</span><span>SaaS</span></div>
+
+        <article class="case case-alt">
+          <div class="case-text">
+            <p class="case-meta">K53 Technology Solution <span>2024 to 2026</span></p>
+            <h3>Identity, automation and client delivery.</h3>
+            <p>Project Manager and IAM Lead for a 5-person team: SailPoint provisioning, WorkCover for an Australian government client, Netverk for Xero and SAP, and the Ziksu QR payments app.</p>
+            <ul class="chips"><li>SailPoint</li><li>One Identity</li><li>Flutter</li><li>Xero API</li></ul>
+          </div>
+          <div class="case-media figure-panel">
+            <div class="fig"><b>JML</b><span>joiner, mover, leaver automation</span></div>
+            <div class="fig"><b>Xero + SAP</b><span>in sync, no double entry</span></div>
+            <div class="fig"><b>QR</b><span>payments app for Ziksu</span></div>
+            <div class="fig"><b>5</b><span>person team</span></div>
+          </div>
         </article>
-        <article class="card card-lg" data-tilt>
-          <span class="card-kind">Government platform</span>
-          <h3>WorkCover</h3>
-          <p>Compliance and case management platform built for the Australian government, delivered with the K53 team.</p>
-          <div class="tags"><span>Angular</span><span>.NET</span><span>Government</span></div>
+
+      </div>
+    </section>
+
+    <!-- SHAREDEAL DEEP DIVE -->
+    <section class="deep" id="sharedeal">
+      <h2 class="h2 reveal">Not just the software. The whole company.</h2>
+      <p class="lede reveal" style="--d:.08s">At ShareDeal I set up every department, then built the systems each one runs on.</p>
+      <ul class="depts reveal" style="--d:.12s">
+        <li>Technology</li><li>Operations and delivery</li><li>Buying and sourcing</li><li>Marketing and brand</li><li>Sales and B2B</li><li>Customer service</li><li>Finance and admin</li>
+      </ul>
+      <div class="metrics" tabindex="0" aria-label="ShareDeal engineering results, scrolls sideways">
+        <article class="metric">
+          <p class="m-head">Home page response</p>
+          <p class="m-val"><s>0.23 s</s> 0.045 s</p>
+          <p>Served from the Cloudflare edge.</p>
         </article>
+        <article class="metric">
+          <p class="m-head">Lighthouse mobile</p>
+          <p class="m-val"><s>72</s> 92</p>
+          <p>WebP images, lazy loading, smaller pages.</p>
+        </article>
+        <article class="metric">
+          <p class="m-head">Automated tests</p>
+          <p class="m-val">~7,000</p>
+          <p>Run in parallel before every production release.</p>
+        </article>
+        <article class="metric">
+          <p class="m-head">Admin routes secured</p>
+          <p class="m-val">1,200+</p>
+          <p>Role-based permissions, TOTP, rate limits and an audit log.</p>
+        </article>
+        <article class="metric">
+          <p class="m-head">Group-buy engine</p>
+          <p class="m-val">11 rules</p>
+          <p>Each with its own switch: size, time limit, join first, group prices.</p>
+        </article>
+        <article class="metric">
+          <p class="m-head">Pen-test programme</p>
+          <p class="m-val">7 phases</p>
+          <p>Monthly scan and 32 ShareDeal-specific attack checks.</p>
+        </article>
+      </div>
+      <div class="deep-grid">
+        <div class="reveal">
+          <h3>Features I designed</h3>
+          <p>Group-buy engine, Free Win referral loop, games and missions, community feed, live commerce on self-hosted video, lifecycle journeys, delivery by map pin, and a local LLM the team can ask about the business.</p>
+        </div>
+        <div class="reveal" style="--d:.08s">
+          <h3>How it runs</h3>
+          <p>AWS with RDS, SSM deploys and no open SSH. Redis with file failover. Cloudflare WAF and CDN. Every feature behind its own switch, every release through staging first.</p>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section class="experience" id="experience">
-      <header class="section-head">
-        <h2 class="h2 split" data-split>Experience.</h2>
-        <p class="reveal">Eight roles, four countries, one through-line: systems people rely on.</p>
-      </header>
-      <div class="timeline">
-        <svg class="timeline-svg" viewBox="0 0 2 1000" preserveAspectRatio="none" aria-hidden="true">
-          <defs><linearGradient id="tlGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#818CF8"/><stop offset="1" stop-color="#C084FC"/></linearGradient></defs>
-          <line class="tl-base" x1="1" y1="0" x2="1" y2="1000" />
-          <line class="tl-glow" id="tlGlow" x1="1" y1="0" x2="1" y2="1000" />
-          <line class="tl-fill" id="tlFill" x1="1" y1="0" x2="1" y2="1000" />
-        </svg>
-        <ol class="milestones">
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Aug 2026 - Present</span>
-            <h3>ERP &amp; AI Product Architect and Lead Developer</h3><p class="org">RemoteIntegrity, Florida (remote, contract)</p>
-            <p>Architecting scalable ERP, SaaS and AI-powered software solutions and the core infrastructure behind them, from product design to lead development.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Apr 2024 - Present</span>
-            <h3>Senior Software Engineer (IAM) / Team Lead</h3><p class="org">Allianz Australia</p>
-            <p>Lead a 15-member team on a User Access Management Portal for Australia, New Zealand and Malaysia. RBAC policies, lifecycle workflows, AD integration, automated provisioning.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Jan 2024 - Present</span>
-            <h3>Senior Software Engineer</h3><p class="org">K53 Technology Solution</p>
-            <p>Lead a 5-member team. SailPoint provisioning and compliance automation, WorkCover for the Australian government, Netverk and Square Bear.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Jun 2022 - Present</span>
-            <h3>Co-Founder and CTO</h3><p class="org">ShareDeal</p>
-            <p>Built and launched the full tech ecosystem, led 15 engineers and analysts, raised BDT 120M seed, 100K+ installs.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Feb 2022 - Feb 2024</span>
-            <h3>Senior Software Engineer</h3><p class="org">Schertech / SCT Bangla</p>
-            <p>Led the mobile team through full SDLC. Integrated 14 ERP modules, built an MES with IoT devices, launched Grinz task management for German users.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Sep 2021 - Oct 2022</span>
-            <h3>Full Stack Developer</h3><p class="org">Mind Orbital Technologies</p>
-            <p>Built HishabPati, an offline-capable transaction tracking SaaS, plus its Flutter app and NestJS admin. 100K+ installs.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Aug 2019 - Jan 2020</span>
-            <h3>Software Engineer</h3><p class="org">BDSTALL.COM</p>
-            <p>Shipped the Bdstall Flutter app (50K+ installs) and optimised the CodeIgniter platform. Daily traffic 25K to 60K+.</p>
-          </li>
-          <li class="milestone"><span class="node"></span>
-            <span class="when">Aug 2018 - Aug 2019</span>
-            <h3>Junior Programmer</h3><p class="org">Retail Technologies Limited</p>
-            <p>Front-end for an attendance and payroll system with 95% employee adoption. Automated payroll via REST API, cutting workload 30%.</p>
-          </li>
-        </ol>
+      <h2 class="h2 reveal">Experience.</h2>
+      <p class="lede reveal" style="--d:.08s">Eight roles since 2018. Open any one for the detail.</p>
+      <div class="roles">
+
+        <details class="role reveal">
+          <summary><span class="r-when">Apr 2024 - Jul 2026</span><span class="r-title">Technical Project Manager, IAM</span><span class="r-org">Allianz Australia</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Project Manager of a 22-person team: development, testing, business analysis, content, design and business stakeholders.</li>
+              <li>Delivered the HR access portal that gives 80,000+ employees access to almost 1,400 internal applications. Delivered on time.</li>
+              <li>The project's Angular and .NET expert, and its One Identity domain expert: IT Shop workflows, VB.NET customisations, AD and LDAP connectors, RBAC and access certification.</li>
+              <li>Automated HR provisioning across countries, so joiners, movers and leavers get the right access automatically.</li>
+              <li>Product Owner of the User Access Management Portal. Received the Team Spirit Award.</li>
+            </ul>
+            <p class="r-tech">Angular, .NET, One Identity Manager, VB.NET, Active Directory, LDAP, RBAC, Jira</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Jan 2024 - Jul 2026</span><span class="r-title">Project Manager and IAM Lead</span><span class="r-org">K53 Technology Solution</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Ran a 5-member team across several client projects for a Sydney IT consultancy, as the single point of contact for Australian clients.</li>
+              <li>SailPoint IAM automation: joiner, mover and leaver provisioning, access governance and audit-ready certification campaigns.</li>
+              <li>WorkCover enhancements for a government client: compliance, reporting and case management.</li>
+              <li>Netverk (Xero and SAP sync), a school management system, Square Bear (Kanban tool) and the Ziksu QR payments app in Flutter.</li>
+            </ul>
+            <p class="r-tech">One Identity Manager, SailPoint, Flutter, Node.js, Xero API, SAP, Agile/Scrum</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Jun 2022 - Present</span><span class="r-title">Co-Founder and CTO</span><span class="r-org">ShareDeal</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Co-founded a team-buying platform in Dhaka and built every department, process and system it runs on.</li>
+              <li>Built the customer app, seller app, rider app, web shop and an admin portal covering orders, stock, delivery, CRM, marketing, finance and compliance.</li>
+              <li>Ran a full security audit and a 7-phase pen-test programme. Cloudflare WAF, hardened servers, encrypted personal data.</li>
+              <li>Home page from 0.23 s to 0.045 s, Lighthouse mobile from 72 to 92, about 7,000 automated tests.</li>
+              <li>Went AI-native in 2026 with Claude Code, shipping almost every working day with human review before production.</li>
+            </ul>
+            <p class="r-tech">Flutter, Laravel, PHP, MySQL, Redis, AWS (EC2, RDS, SSM), Cloudflare, MediaMTX, Reverb, Cypress, Patrol, Claude Code</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Feb 2022 - Feb 2024</span><span class="r-title">Senior Software Engineer</span><span class="r-org">Schertech / SCT Bangla</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Architected, built and led the Schertech MES and product suite for Germany's Scherer Group, from the Dhaka software division.</li>
+              <li>Grew the Dhaka team from 5 to 12 engineers and ran the full development life cycle with the German side.</li>
+              <li>Built the IoT integration that connects factory machines, an internal Flutter app, and integrated 14 ERP modules.</li>
+              <li>Side project: Grinz, a task-management SaaS for users in Germany.</li>
+            </ul>
+            <p class="r-tech">Angular, Flutter, Laravel, MySQL, IoT, real-time analytics, ERP and SAP integration</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Sep 2021 - Oct 2022</span><span class="r-title">Full Stack Developer (part-time)</span><span class="r-org">Mind Orbital Technologies</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Built the whole Hishabpati platform by myself: mobile app, web app, user portal, admin and super admin panels.</li>
+              <li>Offline-first for rural shop owners: PouchDB on the device, CouchDB on the server, synced when a connection is back.</li>
+              <li>Sales, purchases, inventory, credit ledger, expenses and reports in Bangla and English. 100K+ installs.</li>
+            </ul>
+            <p class="r-tech">Angular, Flutter, Node.js, NestJS, PouchDB, CouchDB, AWS</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Sep 2021 - Mar 2022</span><span class="r-title">Mobile App Trainer (part-time)</span><span class="r-org">ICT Division, Government of Bangladesh</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Flutter and Dart trainer on the government's Mobile Game and Application Project.</li>
+              <li>Taught fundamentals, state management, APIs and data, iOS and Android release, and professional practice.</li>
+              <li>Guided trainees from their first app to a finished project, with industry partners.</li>
+            </ul>
+            <p class="r-tech">Flutter, Dart, state management, REST APIs, iOS and Android deployment, Git</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Aug 2019 - Jan 2020</span><span class="r-title">Software Engineer (Tech Lead)</span><span class="r-org">BDSTALL.COM</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Built and led the tech team from scratch and set up its project management process.</li>
+              <li>Designed and built the Flutter customer app, 100K+ installs, and the seller side of the marketplace.</li>
+              <li>Automated the seller onboarding to live listing pipeline and built a content dashboard.</li>
+              <li>Built the digital marketing team. Daily traffic grew from 25K to 60-70K visitors. Earned the Collaboration Master recognition.</li>
+            </ul>
+            <p class="r-tech">Angular, Flutter, PHP, Laravel, Facebook Ads, YouTube, SEO, Google Analytics</p>
+          </div>
+        </details>
+
+        <details class="role reveal">
+          <summary><span class="r-when">Aug 2018 - Aug 2019</span><span class="r-title">Junior Programmer</span><span class="r-org">Retail Technologies Limited</span><i aria-hidden="true"></i></summary>
+          <div class="r-body">
+            <ul>
+              <li>Migrated the in-house ERP from AngularJS to Angular.</li>
+              <li>Added attendance, payroll, sales, accounting and inventory modules, all connected.</li>
+              <li>Payroll reached 95% employee adoption, cut workload by 30% and improved accuracy by 15%.</li>
+              <li>Built the internal Flutter app and the Laravel and Node.js backend.</li>
+            </ul>
+            <p class="r-tech">Angular, AngularJS, TypeScript, Flutter, Laravel, PHP, Node.js, REST APIs</p>
+          </div>
+        </details>
+
       </div>
     </section>
 
     <!-- TERMINAL -->
     <section class="terminal-section" id="terminal">
-      <header class="section-head">
-        <h2 class="h2 split" data-split>Prefer a shell?</h2>
-        <p class="reveal">Type <code>help</code> to explore. Tab completes, arrows recall history. Or open the full editor: <a class="link" href="https://arafatomer66.github.io/portfolio-ide/" target="_blank" rel="noopener" data-cursor="link">portfolio-ide <i>›</i></a></p>
-      </header>
-      <div class="terminal reveal" style="--d:.15s" data-cursor="text">
+      <div class="term-intro">
+        <h2 class="h2 reveal">Prefer a shell?</h2>
+        <p class="lede reveal" style="--d:.08s">Type <code>help</code>. Tab completes, arrows recall history. Or open the <a class="text-link" href="https://arafatomer66.github.io/portfolio-ide/" target="_blank" rel="noopener">IDE version <i aria-hidden="true">&#8599;</i></a></p>
+      </div>
+      <div class="terminal reveal" style="--d:.12s">
         <div class="term-bar">
           <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
           <span class="term-title">omer@portfolio</span>
         </div>
         <div class="term-body" id="termBody" role="log" aria-live="polite"></div>
         <form class="term-input" id="termForm" autocomplete="off">
-          <span class="prompt">omer@portfolio <b>~</b> %</span>
-          <input id="termInput" type="text" spellcheck="false" aria-label="Terminal command" placeholder="help" />
+          <label class="prompt" for="termInput">omer@portfolio <b>~</b> %</label>
+          <input id="termInput" type="text" spellcheck="false" placeholder="help" />
         </form>
       </div>
     </section>
 
     <!-- WRITING -->
     <section class="writing" id="writing">
-      <header class="section-head">
-        <h2 class="h2 split" data-split>Writing.</h2>
-        <p class="reveal">Notes from building identity platforms and a startup at the same time.</p>
-      </header>
+      <h2 class="h2 reveal">Writing.</h2>
       <div class="posts">
-        <a class="post reveal" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
+        <a class="post reveal" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener">
           <span class="when">May 2026</span>
           <h3>Building ShareDeal: lessons from Bangladesh's first group-buying platform</h3>
-          <p>From a napkin sketch to BDT 70M in seed funding and 40K+ installs.</p>
+          <i aria-hidden="true">&#8599;</i>
         </a>
-        <a class="post reveal" style="--d:.08s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="when">Apr 2026</span>
-          <h3>IAM at enterprise scale: what eight years of identity engineering taught me</h3>
-          <p>RBAC, lifecycle automation and the quiet politics of access governance.</p>
-        </a>
-        <a class="post reveal" style="--d:.16s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
-          <span class="when">Apr 2026</span>
-          <h3>SailPoint, honestly: five years in and what I'd tell my younger self</h3>
-          <p>IIQ vs IDN, why connectors are 80% of the work, and certifications as signal.</p>
-        </a>
-        <a class="post reveal" style="--d:.24s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener" data-cursor="link">
+        <a class="post reveal" style="--d:.08s" href="https://arafatomer66.github.io/omerarafat-resume/#blog" target="_blank" rel="noopener">
           <span class="when">Mar 2026</span>
           <h3>Kiln: a design system rooted in Bangladeshi heritage</h3>
-          <p>56 components on npm and pub.dev, web and Flutter in lockstep.</p>
+          <i aria-hidden="true">&#8599;</i>
         </a>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
-      <h2 class="display gradient-text rise">Let's build something.</h2>
-      <p class="hero-sub reveal">Open to senior engineering and leadership roles, IAM consulting, and founder conversations.</p>
-      <div class="hero-actions reveal" style="--d:.1s">
-        <button class="btn copy" type="button" data-copy="arafatomer66@gmail.com" data-cursor="link">
-          <span class="copy-label">Copy email</span>
-          <span class="copy-done" aria-live="polite">Copied to clipboard!</span>
+      <h2 class="contact-title" data-split>Have a business problem? Let's build the system for it.</h2>
+      <div class="contact-actions reveal">
+        <button class="btn btn-primary copy" type="button" data-copy="arafatomer66@gmail.com" data-magnetic>
+          <span class="copy-label">arafatomer66@gmail.com</span>
+          <span class="copy-done" aria-live="polite">Email copied</span>
         </button>
-        <a class="link" href="https://wa.me/8801622524064" target="_blank" rel="noopener" data-cursor="link">WhatsApp <i>›</i></a>
+        <a class="btn btn-ghost" href="https://wa.me/8801622524064" target="_blank" rel="noopener" data-magnetic><span>WhatsApp</span></a>
       </div>
-      <div class="socials reveal" style="--d:.2s">
-        <a href="https://www.linkedin.com/in/arafatomer66/" target="_blank" rel="noopener" data-cursor="link">LinkedIn</a>
-        <a href="https://github.com/arafatomer66" target="_blank" rel="noopener" data-cursor="link">GitHub</a>
-        <a href="https://sharedealnow.com" target="_blank" rel="noopener" data-cursor="link">ShareDeal</a>
-        <a href="https://arafatomer66.github.io/omerarafat-resume/" target="_blank" rel="noopener" data-cursor="link">Resume</a>
-        <a href="https://arafatomer66.github.io/portfolio-ide/" target="_blank" rel="noopener" data-cursor="link">IDE version</a>
-      </div>
+      <ul class="socials reveal" style="--d:.1s">
+        <li><a href="https://www.linkedin.com/in/arafatomer66/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/arafatomer66" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://sharedealnow.com" target="_blank" rel="noopener">ShareDeal</a></li>
+        <li><a href="https://arafatomer66.github.io/omerarafat-resume/" target="_blank" rel="noopener">Resume</a></li>
+        <li><a href="https://arafatomer66.github.io/portfolio-ide/" target="_blank" rel="noopener">IDE version</a></li>
+      </ul>
     </section>
   </main>
 
   <footer class="footer">
-    <span>Omer Arafat, Dhaka</span>
+    <span>Md Omer Arafat, Dhaka</span>
     <span>MSc Computer Science, Jahangirnagar University</span>
   </footer>
 
-  <script src="main.js?v=2" defer></script>
+  <script src="main.js?v=3" defer></script>
 </body>
 </html>

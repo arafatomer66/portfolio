@@ -13,12 +13,11 @@ Push to a GitHub repo and enable Pages on the `main` branch, root folder.
 
 ## What is in here
 
-- Ambient canvas background (three indigo blobs that drift and follow the pointer)
-- Custom cursor: magnetic on buttons and nav, expands on links, enlarges over media, particle trail on a second canvas
-- Split-text headline reveals + staggered section reveals (IntersectionObserver)
-- Lerped scroll proxy driving parallax and the experience timeline tracer
-- 3D tilt + cursor spotlight border on project cards
-- Interactive terminal: `help`, `about`, `skills`, `experience`, `projects`, `writing`, `contact`, `open <target>`, `clear`; Tab completion, arrow history, Ctrl+L
-- Copy-to-clipboard email button with success state
-- All motion is transform/opacity only; `prefers-reduced-motion` turns it all off, touch/small screens get no cursor, tilt or ambient canvas
-
+- Content follows the Work Journey document (2018 to 2026): roles, numbers and projects
+- Hero: WebGL2 contour-map field that bends toward the pointer, with a portrait that tilts
+- Proof numbers that count up, one tech-stack marquee (Simple Icons)
+- "What I want to work on" bento, sticky-stacked case studies with real screenshots
+- ShareDeal deep dive with a sideways-scrolling metrics row
+- Experience as an accordion (native `<details>`), interactive terminal kept
+- Dark and light mode from the system setting; `prefers-reduced-motion` turns all motion off
+- No scroll listeners: IntersectionObserver for reveals, nav state and the active link
